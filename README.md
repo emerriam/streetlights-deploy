@@ -61,3 +61,4 @@ Get sorted index of all streetlights
  - API for sorting could be simpler
  - Sloppy parameter filtering in controller
  - Should be able to pan to a marker when it's clicked on in the table
+ - Eliminate unused routes
