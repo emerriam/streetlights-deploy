@@ -1,0 +1,38 @@
+<table class="table table-striped index-table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Status</th>
+			<th>Alias</th>
+			<th>Color</th>
+			<th>Longitude</th>
+			<th>Latitude</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @lights.try(:each) do |light| %>
+		<tr>
+			<%= form_for light, remote: true do |f| %>
+				<td><%= link_to light.id, light_path(light.id), :target => 'blank', remote: true %></td>
+				<td><%= f.text_field :status %></td>
+				<td><%= f.text_field :alias %></td>
+				<td><%= f.text_field :color %></td>
+				<td><%= f.text_field :longitude %></td>
+				<td><%= f.text_field :latitude %></td>
+				<td><%= 
+				# submit_tag("Update", :alias => nil, :class => 'btn btn-mini btn-primary')
+				 %></td>
+				<td>
+				<%= hidden_field_tag(:id, light.id)%>
+				</td>
+			<% end %>
+
+		</tr>
+		<% end %>
+	<tbody>
+</table>
+
+<th><%= link_to "Alias", :sort => "alias" %></th>
+<th><%= link_to "Price", :sort => "price" %></th>
+<th><%= link_to "Released", :sort => "released_at" %></th>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Streetlights</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/3.4.3/css/tabulator.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/3.4.3/js/tabulator.min.js"></script>
+  </head>
+
+  <body>
+		 <style>
+		  #map {
+		    height: 300px;
+		    width: 75%;
+		    margin: 0px;
+		    padding: 0px;
+		  }
+
+		  #updateForm {
+		    margin-top: 10px;
+		  }
+		</style>
+
+		<div class="layoutBanner">
+		  <h1>Fancy Placement Tool</h1>
+		</div>
+
+		<div id="map"></div>
+		
+    <%= yield %>
+  </body>
+
+</html>

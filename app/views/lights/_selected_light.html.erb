@@ -1,0 +1,23 @@
+<table class="table table-striped">
+	<tbody>
+		<tr>
+			<%= form_for(@light, remote: true) do |f| %>
+				<td><%= link_to @light.id, light_path(@light.id), :target => 'blank', :remote => true, id: 'selected_id' %></td>
+				<td><%= f.text_field :status %></td>
+				<td><%= f.text_field :alias %></td>
+				<td><%= f.text_field :color %></td>
+				<td><%= f.text_field :longitude, readonly: true%></td>
+				<td><%= f.text_field :latitude, readonly: true %></td>
+				<td><%= submit_tag("Update", :class => 'btn btn-mini btn-primary selected_commit') %></td>
+				<td>
+				<%= hidden_field_tag(:id, @light.id)%>
+				</td>
+			<% end %>
+		</tr>
+	<tbody>
+</table>
+<script>
+  // $('.selected_commit').click(function(e) {
+  //   updateSelectedLight(this);
+  // });
+</script>

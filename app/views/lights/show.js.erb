@@ -1,0 +1,3 @@
+tmpLatLng = new google.maps.LatLng( <%= @light.latitude %>, <%= @light.longitude %>);
+map.panTo(tmpLatLng);
+$('.selected_light').html('<%= escape_javascript(render("selected_light")) %>');
