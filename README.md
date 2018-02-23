@@ -22,3 +22,28 @@ Sort the table
  - Sort the table by clicking on the up/down arrows in the header of each column.
 
 # API
+
+The API accepts formatted parameters and returns data in JSON form:
+
+Add a streetlight
+ - Target POST "/lights"
+ - Parameters: status, color, alias, latitude, longitude
+ - Example {"status"=>"None", "color"=>"None", "alias"=>"None", "latitude"=>"37.54329821537339", "longitude"=>"-122.29379641738433"}
+ - The server will return the updated index of all lights.
+ 
+Delete a streetlight
+ - Target: DELETE "/lights/[light id]"
+ - Parameters: id
+ - The server will return the updated index of all lights.
+ 
+ 
+Get index of all streetlights in no particular order
+ - Target: GET "/lights"
+ - No parameters 
+ - The server will return the index of all lights.
+
+Get sorted index of all streetlights
+ - Target: GET "/lights"
+ - Parameters: sorters => "0" => field => [field to be sorted], dir => [direction to sort, asc or desc]
+ - Example: {"sorters"=>{"0"=>{"field"=>"status", "dir"=>"asc"}}}
+ - The server will return with a list of all streetlights sorted by the given criteria.
