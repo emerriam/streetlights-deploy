@@ -47,3 +47,15 @@ Get sorted index of all streetlights
  - Parameters: sorters => "0" => field => [field to be sorted], dir => [direction to sort, asc or desc]
  - Example: {"sorters"=>{"0"=>{"field"=>"status", "dir"=>"asc"}}}
  - The server will return with a list of all streetlights sorted by the given criteria.
+
+# Known problems and TODOS:
+
+ - Formatting and styling is gross and purely functional - need to make it look a little nicer
+ - Need to run through rubocop
+ - No tests written
+ - Javascript should be rewritten as object-oriented
+ - Sorting by "alias" is wonky
+ - Not possible to edit the alias, this should be possible through an input window on the table cell.
+ - No significant validations
+ - No significant feedback in error/failure cases
+ - Can't select groups of lights from table - this can be done with some "selected" tick boxes
