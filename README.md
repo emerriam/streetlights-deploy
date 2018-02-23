@@ -59,3 +59,5 @@ Get sorted index of all streetlights
  - No significant validations
  - No significant feedback in error/failure cases
  - Can't select groups of lights from table - this can be done with some "selected" tick boxes
+ - API for sorting could be simpler
+ - Sloppy parameter filtering in controller
