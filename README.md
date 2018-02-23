@@ -1,6 +1,7 @@
 # streetlights-deploy
 Fancy Placement Tool
 
+https://streetlights-deploy.herokuapp.com/
 
 # How-To
 
