@@ -51,7 +51,6 @@ Get sorted index of all streetlights
 # Known problems and TODOS:
 
  - Formatting and styling is gross and purely functional - need to make it look a little nicer
- - Need to run through rubocop
  - No tests written
  - Javascript should be rewritten as object-oriented
  - Sorting by "alias" is wonky
@@ -61,3 +60,4 @@ Get sorted index of all streetlights
  - Can't select groups of lights from table - this can be done with some "selected" tick boxes
  - API for sorting could be simpler
  - Sloppy parameter filtering in controller
+ - Should be able to pan to a marker when it's clicked on in the table
