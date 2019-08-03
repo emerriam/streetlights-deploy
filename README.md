@@ -51,11 +51,9 @@ Get sorted index of all streetlights
 
  - Formatting and styling is purely functional - need to make it look a little nicer
  - Tests
- - Javascript should be rewritten as object-oriented
  - Not possible to edit the alias, this should be possible through an input window on the table cell.
  - Validations
  - Feedback in error/failure cases
- - Can't select groups of lights from table - this can be done with some "selected" tick boxes
  - API for sorting could be simpler
  - Parameter filtering in controller
  - Should be able to pan to a marker when it's clicked on in the table
