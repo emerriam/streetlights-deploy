@@ -36,7 +36,6 @@ Delete a streetlight
  - Parameters: id
  - The server will return the updated index of all lights.
  
- 
 Get index of all streetlights in no particular order
  - Target: GET "/lights"
  - No parameters 
@@ -50,15 +49,14 @@ Get sorted index of all streetlights
 
 # Known problems and TODOS:
 
- - Formatting and styling is gross and purely functional - need to make it look a little nicer
- - No tests written
+ - Formatting and styling is purely functional - need to make it look a little nicer
+ - Tests
  - Javascript should be rewritten as object-oriented
- - Sorting by "alias" is wonky
  - Not possible to edit the alias, this should be possible through an input window on the table cell.
- - No significant validations
- - No significant feedback in error/failure cases
+ - Validations
+ - Feedback in error/failure cases
  - Can't select groups of lights from table - this can be done with some "selected" tick boxes
  - API for sorting could be simpler
- - Sloppy parameter filtering in controller
+ - Parameter filtering in controller
  - Should be able to pan to a marker when it's clicked on in the table
  - Eliminate unused routes
